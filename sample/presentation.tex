@@ -19,9 +19,12 @@
 
 \usetheme[]{default}
 %\{beamercolorthemeilr}
-\usecolortheme{ilr}
+
+%\useoutertheme{tree}
 %\useoutertheme{tree}
 \useinnertheme{rounded}
+%\useinnertheme{rectangles}
+\usecolortheme{ilr}
 
 %\usepackage{ilr-latex-beamer}
 \usepackage{amsfonts}
@@ -36,7 +39,7 @@
 \newcommand\IS{\ensuremath{\mathit{IS}}}
 \setbeamertemplate{title page}[default][rounded=false]
 \setbeamertemplate{caption}[numbered]
-\titlegraphic{\hspace*{-10mm}\vspace*{-10mm}\includegraphics[width=13cm, height=2.5cm]{bonn3.png}}
+\titlegraphic{\hspace*{-10mm}\vspace*{-8mm}\includegraphics[width=12.8cm, height=3cm]{bonn2.png}}
 \pgfdeclareimage[height=.5cm]{logoUni}{logo2.png}
 \logo{\pgfuseimage{logoUni}}
 %--------------------------
@@ -47,22 +50,7 @@
 {}
 {}
 \makeatother 
-\makeatletter
-\setbeamertemplate{footline}
-{
-    \leavevmode%
-    \hbox{%
-        \begin{beamercolorbox}[wd=.80\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}
-            \insertsectionnavigationhorizontal{.6\textwidth}{\hskip0pt plus1filll}{}
-        \end{beamercolorbox}%
-        
-        \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
-            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{1em}
-            \insertframenumber{} / \inserttotalframenumber\hspace*{1ex} 
-        \end{beamercolorbox}}%
-        \vskip0pt%
-    }
-    \makeatother
+
 %------------------------------------
 
 %----------------------------------------------------------------------------------------
@@ -232,7 +220,7 @@ Supervisor: Prof.Dr.xxxx
 %----------------------------------------------------------------------------------------
 \section{Results}
 \subsection{Descriptive statistics}
-\begin{frame}{Results}
+\begin{frame}{Trends overtime}
     \begin{columns}
         \begin{column}{0.48\textwidth}
         \begin{figure}
@@ -251,7 +239,7 @@ Supervisor: Prof.Dr.xxxx
 \end{frame}
 
 \subsection{Estimation}
-\begin{frame}{Results}
+\begin{frame}{Regression table}
     
     \begin{table}[]
         \small

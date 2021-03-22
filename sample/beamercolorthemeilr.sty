@@ -177,8 +177,23 @@
       use=block body,
       parent=block body
     }
+    
     \def\beamer@themerounded@shadow{false}
     \setbeamertemplate{navigation symbols}{}
+    \setbeamertemplate{footline}
+{
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=.80\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}
+            \insertsectionnavigationhorizontal{.6\textwidth}{\hskip0pt plus1filll}{}
+        \end{beamercolorbox}%
+        
+        \begin{beamercolorbox}[wd=.20\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{1em}
+            \insertframenumber{} / \inserttotalframenumber\hspace*{1ex} 
+        \end{beamercolorbox}}%
+        \vskip0pt%
+    }
   }{}
 \endinput
 %%
